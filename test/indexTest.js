@@ -21,7 +21,7 @@ describe('index.js', function () {
     );
   });
 
-  describe('driversWithRevenueOver()', function () {
+  describe('driversWithRevenueOver()', function (done) {
     it('returns an array of all matching drivers', function () {
       expect(driversWithRevenueOver(drivers, 250)).to.eql([
         { name: 'Sally', revenue: 400 }
@@ -38,7 +38,7 @@ describe('index.js', function () {
     });
   });
 
-  describe('driverNamesWithRevenueOver()', function () {
+  describe('driverNamesWithRevenueOver()', function (done) {
     it('returns an array of all matching drivers names as string', function () {
       expect(driverNamesWithRevenueOver(drivers, 199)).to.eql([ 'Sally', 'Annette' ]);
     });
